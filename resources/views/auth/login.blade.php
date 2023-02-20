@@ -1,3 +1,7 @@
+<head>
+<link rel="shortcut icon" href="{{asset('img/favicon/favicon.png')}}">
+<link rel="stylesheet" type="text/css" href="{{asset('css/login-register.css')}}">
+</head>
 @extends('layouts.app')
 
 @section('content')
@@ -5,7 +9,7 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">{{ __('Login') }}</div>
+                <div class="card-header">{{ __('Logisn') }}</div>
 
                 <div class="card-body">
                     <form method="POST" action="{{ route('login') }}">

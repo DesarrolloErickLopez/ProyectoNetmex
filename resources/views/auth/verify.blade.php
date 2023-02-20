@@ -1,3 +1,7 @@
+<head>
+<link rel="shortcut icon" href="{{asset('img/favicon/favicon.png')}}">
+<link rel="stylesheet" type="text/css" href="{{asset('css/login-register.css')}}">
+</head>
 @extends('layouts.app')
 
 @section('content')

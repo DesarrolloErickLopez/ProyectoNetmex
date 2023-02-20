@@ -1,0 +1,32 @@
+body{
+    background: url("/img/fondo/fondo_welcome.jpg") ;
+    font-family: 'Nunito', sans-serif;
+}
+.icono{
+    margin-left: 0.5rem;
+    margin-top: 0.5rem;
+    /* position: absolute; */
+}
+.img-icon{
+    border-radius: 10%;
+}
+.head{
+    position: relative;
+}
+.catalogo-muestra{
+    padding: 2%;
+    background-color: #21252994;
+    width: 100%;
+    margin-top: 1%;
+    height: auto;
+}
+
+.catalogo-muestra-2{
+    padding: 1%;
+    background-color: #21252994;
+    width: 90%;
+    margin-top: 2% !important;
+    margin-bottom: 2% !important;
+    height: auto;
+    margin: auto;
+}
