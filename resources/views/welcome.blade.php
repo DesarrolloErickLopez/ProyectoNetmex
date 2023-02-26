@@ -26,10 +26,10 @@
                     @auth
                         <a href="{{ url('/home') }}" class="text-sm text-gray-700 dark:text-white-500 underline">Home</a>
                     @else
-                        <a href="{{ route('login') }}" class="text-sm text-gray-700 dark:text-white-500 underline">LOGIN</a>
+                        <a href="{{ route('login') }}" class="text-sm text-gray-700 dark:text-white-500 ">LOGIN</a>
 
                         @if (Route::has('register'))
-                            <a href="{{ route('register') }}" class="ml-4 text-sm text-gray-700 dark:text-gray-500 underline">REGISTER</a>
+                            <a href="{{ route('register') }}" class="ml-4 text-sm text-gray-700 dark:text-gray-500 ">REGISTER</a>
                         @endif
                     @endauth
                 </div>
@@ -135,7 +135,7 @@
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-4">
-                        <div class="card" style="width: 25rem;">
+                        <div class="card" style="width: 23.5rem;">
                             <img src="{{asset('img/welcome-imgs/cine.png')}}" class="card-img-top" alt="..." style="height: 30%;">
                             <div class="card-body">
                                 <h5 class="card-title">Aprovecha nuestra promociones</h5>
@@ -145,7 +145,7 @@
                         </div>
                     </div>
                     <div class="col-4">
-                        <div class="card" style="width: 25rem;">
+                        <div class="card" style="width: 23.5rem;">
                             <img src="{{asset('img/welcome-imgs/series.jpg')}}" class="card-img-top" alt="..." style="height: 30%;">
                             <div class="card-body">
                                 <h5 class="card-title">Series</h5>
@@ -155,7 +155,7 @@
                         </div>
                     </div>
                     <div class="col-4">
-                        <div class="card" style="width: 25rem;">
+                        <div class="card" style="width: 23.5rem;">
                             <img src="{{asset('img/welcome-imgs/peliculas.jpg')}}" class="card-img-top" alt="..." style="height: 30%;">
                             <div class="card-body">
                                 <h5 class="card-title">Peliculas</h5>
