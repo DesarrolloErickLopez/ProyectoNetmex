@@ -13,6 +13,7 @@ use App\Http\Controllers\LoginController;
 | contains the "web" middleware group. Now create something great!
 |
 */
+// DECLARACION DE LA RUTA PRINCIPAL (CATALOGO DE PREVISUALIZACIÓN)
 Route::get('/', function () {
     return view('welcome');
 });

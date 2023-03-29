@@ -22,7 +22,7 @@ class ResetPasswordController extends Controller
     use ResetsPasswords;
 
     /**
-     * Where to redirect users after resetting their password.
+     * Dónde redirigir a los usuarios después de restablecer su contraseña.
      *
      * @var string
      */

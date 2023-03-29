@@ -2,20 +2,20 @@ body{
     background: url("/img/fondo/fondo_welcome.jpg") ;
     font-family: 'Nunito', sans-serif;
 }
-.icono{
+/* .icono{
     margin-left: 0.5rem;
     margin-top: 0.5rem;
-    /* position: absolute; */
-}
-.img-icon{
+    position: absolute; 
+} */
+/* .img-icon{
     border-radius: 10%;
-}
-.head{
+} */
+/* .head{
     position: relative;
-}
+} */
 .catalogo-muestra{
     padding: 2%;
-    background-color: #21252994;
+    background-color: #00000029;
     width: 100%;
     margin-top: 1%;
     height: auto;
@@ -23,10 +23,24 @@ body{
 
 .catalogo-muestra-2{
     padding: 1%;
-    background-color: #21252994;
+    background-color: #00000029;
     width: 90%;
     margin-top: 2% !important;
     margin-bottom: 2% !important;
     height: auto;
     margin: auto;
 }
+
+.bg-white{
+    --bs-bg-opacity: 1;
+  /* background-color: rgba(var(--bs-white-rgb), var(--bs-bg-opacity)) !important; */
+  background-color: #00000029 !important;
+}
+
+.navbar-brand{
+    color: white !important;
+}
+
+.navbar-brand:hover, .navbar-brand:focus {
+    color: wheat !important;
+  }

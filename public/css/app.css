@@ -99,6 +99,16 @@ body {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
+.icono{
+  margin-left: 0.5rem;
+  /* margin-top: 0.5rem; */
+  /* position: absolute; */
+}
+
+.img-icon{
+  border-radius: 10px;
+}
+
 hr {
   margin: 1rem 0;
   color: inherit;
@@ -3765,12 +3775,14 @@ textarea.form-control-lg {
   padding-bottom: var(--bs-navbar-brand-padding-y);
   margin-right: var(--bs-navbar-brand-margin-end);
   font-size: var(--bs-navbar-brand-font-size);
-  color: var(--bs-navbar-brand-color);
+  /* color: var(--bs-navbar-brand-color); */
+  color: white;
   text-decoration: none;
   white-space: nowrap;
 }
 .navbar-brand:hover, .navbar-brand:focus {
-  color: var(--bs-navbar-brand-hover-color);
+  /* color: var(--bs-navbar-brand-hover-color); */
+  color: wheat;
 }
 
 .navbar-nav {
@@ -3912,6 +3924,7 @@ textarea.form-control-lg {
   .navbar-expand-md .navbar-nav .nav-link {
     padding-right: var(--bs-navbar-nav-link-padding-x);
     padding-left: var(--bs-navbar-nav-link-padding-x);
+    color: white !important;
   }
   .navbar-expand-md .navbar-nav-scroll {
     overflow: visible;
@@ -8166,7 +8179,8 @@ textarea.form-control-lg {
 
 .bg-white {
   --bs-bg-opacity: 1;
-  background-color: rgba(var(--bs-white-rgb), var(--bs-bg-opacity)) !important;
+  /* background-color: rgba(var(--bs-white-rgb), var(--bs-bg-opacity)) !important; */
+  background-color: #00000029;
 }
 
 .bg-body {
