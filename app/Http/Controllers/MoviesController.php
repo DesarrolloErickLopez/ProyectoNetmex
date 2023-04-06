@@ -7,6 +7,16 @@ use Illuminate\Support\Facades\Http;
 
 class MoviesController extends Controller
 {
+     /**
+     * Crear una nueva instancia de controlador.
+     *
+     * @return void
+     */
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+    
     /**
      * Display a listing of the resource.
      *
@@ -17,7 +27,7 @@ class MoviesController extends Controller
         $popularMovies = Http::get('https://api.themoviedb.org/3/movie/popular?api_key=b5d9e2c4c4e83a1dbcacf987ba60ec08')
             ->json()['results'];
 
-        dump($popularMovies);
+        // dump($popularMovies);
 
         // return view('home', compact('popularMovies', '$popularMovies'));
         return view('home', [

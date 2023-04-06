@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.sidebar')
 
 @section('content')
 <head>
@@ -7,7 +7,7 @@
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
-            <!-- <div class="card">
+            <div class="card">
                 <div class="card-header">{{ __('Dashboard') }}</div>
 
                 <div class="card-body">
@@ -19,13 +19,13 @@
 
                     {{ __('You are logged in!') }}
                 </div>
-            </div> -->
+            </div>
 
-            <!-- @foreach ($popularMovies as $movie)
+            @foreach ($popularMovies as $movie)
             <div>
                 <p>{{ $movie['title'] }}</p>
             </div>
-            @endforeach -->
+            @endforeach
 
 
 
