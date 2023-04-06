@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+// use Illuminate\Support\Facades\Http;
 
 class HomeController extends Controller
 {
@@ -22,7 +23,12 @@ class HomeController extends Controller
      * @return \Illuminate\Contracts\Support\Renderable
      */
     public function index()
-    {
-        return view('home');
+    {   
+        // $popularMovies = HTTP::get('https://developers.themoviedb.org/3/movie/popular')
+        //     ->json();
+
+        //     do($popularMovies);
+    
+        // return view('home');
     }
 }
