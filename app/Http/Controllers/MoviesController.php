@@ -16,7 +16,7 @@ class MoviesController extends Controller
     {
         $this->middleware('auth');
     }
-    
+
     /**
      * Display a listing of the resource.
      *
@@ -24,16 +24,23 @@ class MoviesController extends Controller
      */
     public function index()
     {
-        $popularMovies = Http::get('https://api.themoviedb.org/3/movie/popular?api_key=b5d9e2c4c4e83a1dbcacf987ba60ec08')
+        $popularMovies = Http::withToken(config('services.tmdb.token'))
+            ->get('https://api.themoviedb.org/3/movie/popular')
             ->json()['results'];
 
+        // $collection = collect($popularMovies);
+        // $chunks = $collection->chunk(5);
+        // $chunks->all();
+        // dump($chunks[0]);        
+        // dump($popularMovies);
         // dump($popularMovies);
 
         // return view('home', compact('popularMovies', '$popularMovies'));
-        return view('home', [
+        return view('home', 
+            [
             'popularMovies' => $popularMovies,
-        ]);
-        
+            ]
+        );
     }
 
     /**
