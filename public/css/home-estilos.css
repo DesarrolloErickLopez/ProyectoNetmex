@@ -3,25 +3,27 @@ body{
     font-family: 'Nunito', sans-serif;
 }
 
-.card{
+/* .card{
     margin: 1%;
-}
+} */
 
 #news-slider{
     margin-top: 80px;
 }
 .post-slide{
-    background: #fff;
+    /* background: #fff; */
     margin: 20px 15px 20px;
     border-radius: 15px;
     padding-top: 1px;
     box-shadow: 0px 14px 22px -9px #bbcbd8;
+    background-color: #000;
+    height: 80%;
 }
 .post-slide .post-img{
     position: relative;
     overflow: hidden;
     border-radius: 10px;
-    margin: -12px 15px 8px 15px;
+    margin: -10px 15px 3px 15px;
     margin-left: -10px;
 }
 .post-slide .post-img img{
@@ -35,7 +37,7 @@ body{
 }
 .post-slide .over-layer{
     width:100%;
-    height:100%;
+    height:300px;
     position: absolute;
     top:0;
     left:0;
@@ -56,9 +58,14 @@ body{
     font-size:25px;
 }
 .post-slide .post-content{
-    background:#fff;
+    /* background:#fff; */
+    margin: auto;
     padding: 2px 20px 40px;
     border-radius: 15px;
+    background-color: #000;
+    min-height: 110px;
+    max-height: 110px;
+    /* height: auto; */
 }
 .post-slide .post-title a{
     font-size:18px;
@@ -83,7 +90,7 @@ body{
 }
 .post-slide .post-date i{
     font-size:20px;
-    margin-right:8px;
+    /* margin-right:8px; */
     color: #CFDACE;
 }
 .post-slide .read-more{
@@ -139,4 +146,63 @@ body{
     .post-slide .post-content{
         padding: 0px 15px 25px 15px;
     }
+}
+
+.movieTitle{
+    margin-top: 0;
+    margin-bottom: 0 !important;
+    font-size: 12px;
+    color: white;
+    height: 8%;
+    text-align: center;
+}
+
+.movieInfo{
+    display: flex;
+    color: #ffffff;
+    margin: auto;
+}
+
+.movieVoteTime{
+    font-size: 12px;
+    margin: auto;
+}
+
+.dropdown-toggle{
+    width: 100%;
+    margin: auto;
+}
+
+i{
+    margin: auto;
+}
+
+.zmdi-hc-lg{
+    vertical-align: 0%;
+}
+
+.owl-carousel .owl-wrapper, .owl-carousel .owl-item{
+    max-height: auto;
+    min-height: auto;
+}
+
+.titleSection{
+    position: absolute;
+    color: rgb(213, 213, 213);
+    margin: 0%;
+    font-size: 60px;
+    text-align: center;
+    width: 100%;
+    cursor: pointer;
+    font-family: 'Arial Rounded MT Bold';
+}
+
+.titleSection:hover{
+    color: rgb(255, 255, 255);
+    margin: 0%;
+    font-size: 60px;
+    text-align: center;
+    width: 100%;
+    cursor: pointer;
+    transform: scale(1.1);
 }
