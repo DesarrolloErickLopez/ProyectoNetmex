@@ -1,5 +1,5 @@
 body{
-    background: url("/img/fondo/fondo_welcome.jpg") ;
+    background: url("/img/fondo/fondo_welcome1.jpg");
     font-family: 'Nunito', sans-serif;
 }
 
@@ -190,19 +190,23 @@ i{
     position: absolute;
     color: rgb(213, 213, 213);
     margin: 0%;
-    font-size: 60px;
-    text-align: center;
+    font-size: 50px;
+    /* text-align: center; */
     width: 100%;
-    cursor: pointer;
+    cursor: context-menu;
     font-family: 'Arial Rounded MT Bold';
 }
 
 .titleSection:hover{
     color: rgb(255, 255, 255);
-    margin: 0%;
-    font-size: 60px;
-    text-align: center;
-    width: 100%;
-    cursor: pointer;
     transform: scale(1.1);
+}
+
+
+.headCarousel{
+    margin-top: -24px;
+}
+
+.container{
+    margin-top: 15px;
 }

@@ -5,7 +5,7 @@
 }
 
 .canva{
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("/img/fondo/fondo_welcome.jpg") no-repeat;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("/img/fondo/fondo_welcome2.jpg") no-repeat;
     background-size: cover;
     /* height: 100%;
     width: 100%; */
@@ -15,7 +15,7 @@
 }
 
 .offcanvas{
-    background:linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)),  url("/img/fondo/fondo_welcome.jpg");
+    background:linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)),  url("/img/fondo/fondo_welcome2.jpg");
     color: azure;
     
 }
@@ -37,6 +37,11 @@ a{
 }
 
 .welcome{
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("/img/fondo/fondo_welcome.jpg") no-repeat;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("/img/fondo/fondo_welcome2.jpg") no-repeat;
     background-size: cover;
+}
+
+.itemSideBar:hover{
+    background-color: grey;
+    transform: scale(1.1);
 }

@@ -65,7 +65,8 @@
     <section class="canva">
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">NETMEX</a>                 
+                <img class="img-icon" src="{{asset('img/icono/logo.jpg')}}" alt="Logo de HTML" width="75" height="50" />
+                <a class="navbar-brand px-3" href="#">NETMEX</a>                 
                 <button class="btn btn-dark navbar-toggler" href="#offcanvasExample" rol="button" data-bs-toggle="offcanvas" aria-controls="offcanvasExample">
                 <span class=""><i class="bi bi-list "></i></span>
                 </button>
@@ -73,22 +74,22 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav m-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Home</a>
+                            <a class="itemSideBar nav-link px-3" href="#">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link px-3" href="#">Popieties</a>
+                            <a class="itemSideBar nav-link px-3" href="#">Popieties</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link px-3" href="#">Services</a>
+                            <a class="itemSideBar nav-link px-3" href="#">Services</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link px-3" href="#">About</a>
+                            <a class="itemSideBar nav-link px-3" href="#">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link px-3" href="#">Contact</a>
+                            <a class="itemSideBar nav-link px-3" href="#">Contact</a>
                         </li>                        
-                        <li class="nav-item dropdown">
-                            <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                        <li class="nav-item dropdown px-3">
+                            <a id="navbarDropdown" class="itemSideBar nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                 {{ Auth::user()->name }}
                             </a>
                             <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
@@ -114,20 +115,36 @@
                     <div class="offcanvas-body">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Home</a>
+                                <a class="itemSideBar nav-link px-3" href="#">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link px-3" href="#">Popieties</a>
+                                <a class="itemSideBar nav-link px-3" href="#">Popieties</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link px-3" href="#">Services</a>
+                                <a class="itemSideBar nav-link px-3" href="#">Services</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link px-3" href="#">About</a>
+                                <a class="itemSideBar nav-link px-3" href="#">About</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link px-3" href="#">Contact</a>
-                            </li>                        
+                                <a class="itemSideBar nav-link px-3" href="#">Contact</a>
+                            </li>
+                            <li class="nav-item dropdown px-3">
+                                <a id="navbarDropdown" class="itemSideBar nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                                    {{ Auth::user()->name }}
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item bg-dark" href="{{ route('logout') }}"
+                                        onclick="event.preventDefault();
+                                                        document.getElementById('logout-form').submit();">
+                                        {{ __('Logout') }}
+                                    </a>
+
+                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                        @csrf
+                                    </form>
+                                </div>
+                            </li>                         
                         </ul>    
                         <form class="d-flex">
                             <button class="btn btn-outline-success px-3" type="submit">Search</button>
