@@ -51,25 +51,25 @@
 <!-- CONTENEDOR PRINCIPAL DE SERIES Y PELICULAS -->
 <div class="container"> 
     <!-- ESTA ES LA CARTA DE PRESENTACION -->
-    <!-- <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">{{ __('Dashboard') }}</div>
+        {{-- <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="card">
+                    <div class="card-header">{{ __('Dashboard') }}</div>
 
-                <div class="card-body">
-                    @if (session('status'))
-                        <div class="alert alert-success" role="alert">
-                            {{ session('status') }}
-                        </div>
-                    @endif
+                    <div class="card-body">
+                        @if (session('status'))
+                            <div class="alert alert-success" role="alert">
+                                {{ session('status') }}
+                            </div>
+                        @endif
 
-                    {{ __('You are logged in!') }}
+                        {{ __('You are logged in!') }}
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>     -->
+        </div> --}}
     <!-- ESTA ES LA BASE -->
-        <!-- <div class="row row row-cols-2 row-cols-lg-5 g-2 g-lg-3">
+        {{-- <div class="row row row-cols-2 row-cols-lg-5 g-2 g-lg-3">
             @foreach ($popularMovies as $movie)            
             <div class="card col" style="width: 23%;">
             <img src="{{asset('img/welcome-carrusel/1.jpg')}}" class="d-block w-100" alt="...">
@@ -80,9 +80,9 @@
                 </div>
             </div>
             @endforeach
-        </div> -->
+        </div> --}}
     <!-- ESTE ES EL BUENO AQUI -->
-        <!-- <div class="container">
+        {{-- <div class="container">
             <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">
                 @foreach ($popularMovies as $movie)  
                     <div class="col">
@@ -96,7 +96,7 @@
                     </div>
                 @endforeach
             </div>
-        </div> -->
+        </div> --}}
 
         <!-- POPULAR MOVIES -->
         <div class="container-fluid">
@@ -105,26 +105,16 @@
                     <h1 class="titleSection">POPULAR</h1>
                     <div id="news-slider" class="owl-carousel">                
                         @foreach ($popularMovies as $movie)  
-                        
                         <x-movie-card :movie="$movie" :genres="$genres"/>
                         @endforeach
                     </div>
                 </div>
             </div>
         </div>
-
-
         {{-- NOW PLAYING MOVIES --}}
-        
-         {{-- <div class="container">
-            <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">
-                
-            </div>
-        </div> --}}
-        <div class="container-fluid">
+        {{-- <div class="container-fluid">
             <div class="row">
                 <div class="col-md-12">
-                    {{-- <h1 class="titleSection">POPULAR</h1> --}}
                     <div id="news-slider2" class="owl-carousel">                
                     @foreach ($nowPlayingmovies as $movie)  
                         <x-movie-card :movie="$movie" :genres="$genres"/>
@@ -132,7 +122,8 @@
                     </div>
                 </div>
             </div>
-        </div> 
+        </div>  --}}
+        
 </div>    
 
 <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
