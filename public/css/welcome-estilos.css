@@ -43,4 +43,12 @@ body{
 
 .navbar-brand:hover, .navbar-brand:focus {
     color: wheat !important;
-  }
+}
+
+.carousel {
+    margin: auto;
+}
+
+.card {
+    margin: auto;
+}

@@ -10,8 +10,8 @@
     </head>
 @section('content')
     <div class="catalogo-muestra" >
-        <div class="row">
-            <div class="col-md-3">
+        <div class="row row-cols-1 row-cols-lg-4 g-2 g-lg-3">
+            <div class="col">
                 <div id="carouselExampleIndicators" class="carousel slide d-block w-75" data-bs-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
@@ -34,7 +34,7 @@
                     </button>
                 </div>
             </div>
-            <div class="col-md-3">
+            <div class="col">
                 <div id="carouselExampleIndicators2" class="carousel slide d-block w-75" data-bs-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
@@ -57,7 +57,7 @@
                     </button>
                 </div>
             </div>
-            <div class="col-md-3">
+            <div class="col">
                 <div id="carouselExampleIndicators3" class="carousel slide d-block w-75" data-bs-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
@@ -80,7 +80,7 @@
                     </button>
                 </div>
             </div>
-            <div class="col-md-3">
+            <div class="col">
                 <div id="carouselExampleIndicators4" class="carousel slide d-block w-75" data-bs-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
@@ -107,8 +107,8 @@
     </div>
     <div class="catalogo-muestra-2">
         <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-4">
+            <div class="row row-cols-1 row-cols-lg-3 g-2 g-lg-3">
+                <div class="col">
                     <div class="card" style="width: 22rem;">
                         <img src="{{asset('img/welcome-imgs/cine.png')}}" class="card-img-top" alt="..." style="height: 30%;">
                         <div class="card-body">
@@ -118,7 +118,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-4">
+                <div class="col">
                     <div class="card" style="width: 22rem;">
                         <img src="{{asset('img/welcome-imgs/series.jpg')}}" class="card-img-top" alt="..." style="height: 30%;">
                         <div class="card-body">
@@ -128,7 +128,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-4">
+                <div class="col">
                     <div class="card" style="width: 22rem;">
                         <img src="{{asset('img/welcome-imgs/peliculas.jpg')}}" class="card-img-top" alt="..." style="height: 30%;">
                         <div class="card-body">
