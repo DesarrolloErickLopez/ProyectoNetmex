@@ -17,5 +17,5 @@ Auth::routes();
 // Route::get('/home', [App\Http\Controllers\MoviesController::class, 'index'])->name('home.index');
 
 Route::get('/home', 'App\Http\Controllers\MoviesController@index')->name('movies.home');
-// Route::get('/movies', 'App\Http\Controllers\MoviesController@index')->name('movies.show');
-Route::view('/movie','show');
+Route::get('/moviesz{movie}', 'App\Http\Controllers\MoviesController@show')->name('movies.show');
+// Route::view('/movie','show');

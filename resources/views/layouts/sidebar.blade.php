@@ -66,7 +66,7 @@
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
                 <img class="img-icon" src="{{asset('img/icono/logo.jpg')}}" alt="Logo de HTML" width="75" height="50" />
-                <a class="navbar-brand px-3" href="#">NETMEX</a>                 
+                <a class="navbar-brand px-3" href="{{ route('movies.home') }}">NETMEX</a>                 
                 <button class="btn btn-dark navbar-toggler" href="#offcanvasExample" rol="button" data-bs-toggle="offcanvas" aria-controls="offcanvasExample">
                 <span class=""><i class="bi bi-list "></i></span>
                 </button>
@@ -74,20 +74,17 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav m-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="itemSideBar nav-link px-3" href="#">Home</a>
+                            <a class="itemSideBar nav-link px-3" href="{{ route('movies.home') }}">CATALOGO</a>
                         </li>
                         <li class="nav-item">
-                            <a class="itemSideBar nav-link px-3" href="#">Popieties</a>
+                            <a class="itemSideBar nav-link px-3" href="#">CONTACTANOS</a>
                         </li>
                         <li class="nav-item">
-                            <a class="itemSideBar nav-link px-3" href="#">Services</a>
+                            <a class="itemSideBar nav-link px-3" href="#">ACERCA DE</a>
                         </li>
                         <li class="nav-item">
-                            <a class="itemSideBar nav-link px-3" href="#">About</a>
+                            <a class="itemSideBar nav-link px-3" href="#">MI CUENTA</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="itemSideBar nav-link px-3" href="#">Contact</a>
-                        </li>                        
                         <li class="nav-item dropdown px-3">
                             <a id="navbarDropdown" class="itemSideBar nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                 {{ Auth::user()->name }}
@@ -109,25 +106,24 @@
 
                 <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
                     <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasExampleLabel">NETMEX</h5>
+                        <a href="{{ route('movies.home') }}">
+                            <h5 class="offcanvas-title" id="offcanvasExampleLabel">NETMEX</h5>
+                        </a>
                         <button type="button" class="btn btn-light btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
                     <div class="offcanvas-body">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                             <li class="nav-item">
-                                <a class="itemSideBar nav-link px-3" href="#">Home</a>
+                                <a class="itemSideBar nav-link px-3" href="{{ route('movies.home') }}">CATALOGO</a>
                             </li>
                             <li class="nav-item">
-                                <a class="itemSideBar nav-link px-3" href="#">Popieties</a>
+                                <a class="itemSideBar nav-link px-3" href="#">CONTACTANOS</a>
                             </li>
                             <li class="nav-item">
-                                <a class="itemSideBar nav-link px-3" href="#">Services</a>
+                                <a class="itemSideBar nav-link px-3" href="#">ACERCA DE</a>
                             </li>
                             <li class="nav-item">
-                                <a class="itemSideBar nav-link px-3" href="#">About</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="itemSideBar nav-link px-3" href="#">Contact</a>
+                                <a class="itemSideBar nav-link px-3" href="#">MI CUENTA</a>
                             </li>
                             <li class="nav-item dropdown px-3">
                                 <a id="navbarDropdown" class="itemSideBar nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
@@ -146,9 +142,6 @@
                                 </div>
                             </li>                         
                         </ul>    
-                        <form class="d-flex">
-                            <button class="btn btn-outline-success px-3" type="submit">Search</button>
-                        </form>
                     </div>
                 </div>
             </div>
@@ -157,8 +150,8 @@
     @endguest
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-    <main class="py-4">
-            @yield('content')
-    </main>
+    {{-- <main class="py-4"> --}}
+    @yield('content')
+    {{-- </main> --}}
 </body>
 </html>
