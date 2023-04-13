@@ -1,0 +1,48 @@
+#WhatsApp {
+    color:green;
+}
+#tituloContact{
+    font-size: 30px;
+    color:rgb(56, 36, 70);
+    font-weight: bold;
+    text-align: center;
+
+}
+#colUno{
+    background-color: rgba(255, 255, 255, 0.567);
+    border-radius: 7px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    height: 400px;
+}
+#lineaContact{
+    color:rgb(74, 51, 113);
+    opacity: 1;
+    width: 20%;
+    height: 10px;
+    margin-left: 40%;
+}
+#texto1Contact{
+    padding-left: 10%;
+    padding-right: 10%;
+    text-align: justify;
+    font-size: 20px;
+    line-height:20px;
+    white-space:pre-wrap;
+}
+.input-group-text{
+    width: 100px;
+}
+#mensaje{
+    width: 80%;
+    padding: 1%;
+    border-radius: 10px;
+    background-color: white;
+    color: blue;
+    font-weight: bold;
+    font-size: 15px;
+}
+#textoLink{
+    color: black;
+    text-decoration: none;
+    font-weight: normal;
+}

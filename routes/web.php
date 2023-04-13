@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LoginController;
+use App\Http\Controllers\MessagesController;
 // use App\Http\Controllers\MoviesController;
 
 
@@ -12,7 +13,9 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+
 Route::view('/contact','contact')->name('contact');
+Route::post('/contact',[MessagesController::class, 'store']);
 Route::view('/about','about')->name('about');
 Route::view('/mycount','mycount')->name('mycount');
 
