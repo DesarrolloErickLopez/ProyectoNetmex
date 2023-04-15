@@ -17,7 +17,7 @@ Route::get('/', function () {
 Route::view('/contact','contact')->name('contact');
 Route::post('/contact',[MessagesController::class, 'store']);
 Route::view('/about','about')->name('about');
-Route::view('/mycount','mycount')->name('mycount');
+Route::view('/mycount','mycount')->name('mycount'); 
 
 // AQUÍ ESTAMOS ALMACENANDO TODAS LAS RUTAS QUE TIENE QUE VER CON EL TEMA DE LA AUTENTICACION
 Auth::routes();
