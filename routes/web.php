@@ -19,6 +19,11 @@ Route::post('/contact',[MessagesController::class, 'store']);
 Route::view('/about','about')->name('about');
 Route::view('/mycount','mycount')->name('mycount');
 
+// Route::get('/mycount/{id}/editar', [HomController::class, 'edit'])->name('mycount.edit');
+// Route::patch('/mycount/{project}', [PortfolioController::class, 'update'])->name('mycount.update');
+
+
+
 // AQUÍ ESTAMOS ALMACENANDO TODAS LAS RUTAS QUE TIENE QUE VER CON EL TEMA DE LA AUTENTICACION
 Auth::routes();
 // Route::get('/home', [App\Http\Controllers\MoviesController::class, 'index'])->name('home.index');

@@ -1,0 +1,32 @@
+body{
+    background: url("/img/fondo/fondo_welcome1.jpg");
+    font-family: 'Nunito', sans-serif;
+}
+
+.foto{
+    height: 80%;
+    width: 80%;
+    margin: auto;
+    border-radius: 50%;
+}
+
+.seccionFoto{
+    background-color: grey;
+    text-align: center;
+    display: inherit;
+}
+
+p{
+    margin-top: 1rem;
+margin-bottom: 1rem;
+color: white;
+font-size: 30px;
+}
+
+.infoUsuario{
+
+}
+
+.modal-dialog{
+    max-width: 80% !important;
+}
