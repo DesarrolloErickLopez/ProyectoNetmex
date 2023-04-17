@@ -21,19 +21,13 @@
                     <div class="infoUsuario">
                         <p>{{ Auth::user()->name }} </p>
                         <p>{{ Auth::user()->email }} </p>
-                        {{-- <a href="{{ route('mycount.show', Auth::user()) }}">{{ Auth::user()->id }}</a> --}}
-                        <a style="color: black;" href="{{ route('mycount.edit', Auth::user()) }}">Editar</a>
-                        
-                        {{-- <ul>
-                            @forelse($users as $users)
-                                <li>{{ $users->name }}
-                                    <br>
-                                    <small>{{ $users->email }}</small>
-                                </li>
-                            @empty			
-                                <li>No hay proyectos</li>
-                            @endforelse
-                        </ul> --}}
+
+
+                        <a style="color: black;" href="{{ route('mycount.edit', Auth::user()) }}">
+                        <button class="btn btn-warning">
+                        EDITAR    
+                        </button>    
+                        </a>
                         {{-- <ul>
                             @forelse($users as $users)
                             <li><a href="{{ route('mycount.show', $users) }}">{{ $users->name }}</a>
@@ -44,7 +38,6 @@
                                 <li>No hay proyectos</li>
                             @endforelse
                         </ul> --}}
-
                     </div>
                 </div>
             </div>

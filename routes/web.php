@@ -22,13 +22,7 @@ Route::view('/about','about')->name('about');
 Route::view('/mycount','mycount')->name('mycount');
 
 Route::get('/mycount', [UserController::class, 'index'])->name('mycount.index');
-// Route::post('/mycount', [UserController::class, 'store'])->name('mycount.store');
-Route::get('/mycount/{id}', [UserController::class, 'show'])->name('mycount.show');
-
-
-
 Route::get('/mycount/{id}/editar', [UserController::class, 'edit'])->name('mycount.edit');
-
 Route::patch('/mycount/{user}', [UserController::class, 'update'])->name('mycount.update');
 
 

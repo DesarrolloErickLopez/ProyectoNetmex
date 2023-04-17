@@ -23,10 +23,19 @@ color: white;
 font-size: 30px;
 }
 
-.infoUsuario{
+/* .infoUsuario{
 
-}
+} */
 
 .modal-dialog{
     max-width: 80% !important;
+}
+
+.form-label{
+    color: white;
+}
+
+li{
+    color: white;
+    list-style-type: none;
 }
