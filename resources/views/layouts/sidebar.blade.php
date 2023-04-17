@@ -83,7 +83,7 @@
                             <a class="itemSideBar nav-link px-3" href="{{ route('about') }}">ACERCA DE</a>
                         </li>
                         <li class="nav-item">
-                            <a class="itemSideBar nav-link px-3" href="{{ route('mycount') }}">MI CUENTA</a>
+                            <a class="itemSideBar nav-link px-3" href="{{ route('mycount.index') }}">MI CUENTA</a>
                         </li>
                         <li class="nav-item dropdown px-3">
                             <a id="navbarDropdown" class="itemSideBar nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
@@ -123,7 +123,7 @@
                                 <a class="itemSideBar nav-link px-3" href="{{ route('about') }}">ACERCA DE</a>
                             </li>
                             <li class="nav-item">
-                                <a class="itemSideBar nav-link px-3" href="{{ route('mycount') }}">MI CUENTA</a>
+                                <a class="itemSideBar nav-link px-3" href="{{ route('mycount.index') }}">MI CUENTA</a>
                             </li>
                             <li class="nav-item dropdown px-3">
                                 <a id="navbarDropdown" class="itemSideBar nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>

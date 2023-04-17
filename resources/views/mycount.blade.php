@@ -21,8 +21,30 @@
                     <div class="infoUsuario">
                         <p>{{ Auth::user()->name }} </p>
                         <p>{{ Auth::user()->email }} </p>
-                        {{-- <p>{{ Auth::user()->id }} </p> --}}
-                        {{-- <a href="{{ route('portfolio.edit', $project) }}">Editar</a> --}}
+                        {{-- <a href="{{ route('mycount.show', Auth::user()) }}">{{ Auth::user()->id }}</a> --}}
+                        <a style="color: black;" href="{{ route('mycount.edit', Auth::user()) }}">Editar</a>
+                        
+                        {{-- <ul>
+                            @forelse($users as $users)
+                                <li>{{ $users->name }}
+                                    <br>
+                                    <small>{{ $users->email }}</small>
+                                </li>
+                            @empty			
+                                <li>No hay proyectos</li>
+                            @endforelse
+                        </ul> --}}
+                        {{-- <ul>
+                            @forelse($users as $users)
+                            <li><a href="{{ route('mycount.show', $users) }}">{{ $users->name }}</a>
+                                    <br>
+                                    <small>{{ $users->email }}</small>
+                                </li>
+                            @empty			
+                                <li>No hay proyectos</li>
+                            @endforelse
+                        </ul> --}}
+
                     </div>
                 </div>
             </div>
