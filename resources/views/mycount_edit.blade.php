@@ -24,16 +24,6 @@
                             @endif
                             <form method="post" action="{{ route('mycount.update', $user) }}">
                                 @csrf @method('patch')
-                                {{-- <label>
-                                    Nombre<br>
-                                    <input type="text" name="name" value="{{ old('name', $user->name) }}">
-                                </label>
-                                <br>
-                                <label>
-                                    Email<br>
-                                    <input type="email" name="email" value="{{ old('name', $user->email) }}">
-                                </label>
-                                <br> --}}
                                 <div class="mb-3">
                                     <label for="formGroupExampleInput" class="form-label">Nombre</label>
                                     <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Ingrese el nuevo nombre"
