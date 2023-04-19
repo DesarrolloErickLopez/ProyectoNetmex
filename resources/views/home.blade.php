@@ -6,8 +6,17 @@
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css"> 
+<link rel="stylesheet" type="text/css" href="{{asset('css/busqueda.css')}}">
+    <script src="{{ asset('js/busqueda.js') }}" defer></script>
 </head>  
-
+<div id="busqueda">
+    <div class="input-group mb-1">
+        <span class="input-group-text"><i class="bi bi-search" style="  margin-top:-7px;"></i></span>
+        <input  type="text" class="form-control" id="searchInput" placeholder="Escribe el título de la película...">
+        <ul id="autocompleteResults"></ul>
+</div>
+        
+</div>
 <!-- CARRUSEL DE PORTADA HASTA EL MOMENTO -->
 <div id="carouselExampleCaptions" class="headCarousel carousel slide">
     <div class="carousel-indicators">
