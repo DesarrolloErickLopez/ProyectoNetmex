@@ -51,4 +51,6 @@ body{
 
 .card {
     margin: auto;
+    background: url("/img/fondo/fondo_welcome.jpg");
+    color: white;
 }

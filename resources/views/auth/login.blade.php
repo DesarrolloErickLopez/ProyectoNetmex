@@ -1,6 +1,7 @@
 <head>
 <link rel="shortcut icon" href="{{asset('img/favicon/favicon.png')}}">
 <link rel="stylesheet" type="text/css" href="{{asset('css/login-register.css')}}">
+<link rel="stylesheet" type="text/css" href="{{asset('css/about.css')}}">
 </head>
 @extends('layouts.sidebar')
 
@@ -11,7 +12,7 @@
             <div class="card">
                 <div class="card-header">{{ __('Login') }}</div>
 
-                <div class="card-body">
+                <div class="card-body" style="color: white;">
                     <form method="POST" action="{{ route('login') }}">
                         @csrf
 
@@ -57,15 +58,16 @@
 
                         <div class="row mb-0">
                             <div class="col-md-8 offset-md-4">
-                                <button type="submit" class="btn btn-primary">
+                                <button type="submit" class="btn btn-lg btn-warning"
+                                style="">
                                     {{ __('Login') }}
                                 </button>
 
-                                @if (Route::has('password.request'))
+                                {{-- @if (Route::has('password.request'))
                                     <a class="btn btn-link" href="{{ route('password.request') }}">
                                         {{ __('Forgot Your Password?') }}
                                     </a>
-                                @endif
+                                @endif --}}
                             </div>
                         </div>
                     </form>

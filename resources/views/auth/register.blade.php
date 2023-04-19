@@ -1,6 +1,7 @@
 <head>
 <link rel="shortcut icon" href="{{asset('img/favicon/favicon.png')}}">
 <link rel="stylesheet" type="text/css" href="{{asset('css/login-register.css')}}">
+<link rel="stylesheet" type="text/css" href="{{asset('css/about.css')}}">
 </head>
 @extends('layouts.sidebar')
 
@@ -11,7 +12,7 @@
             <div class="card">
                 <div class="card-header">{{ __('Register') }}</div>
 
-                <div class="card-body">
+                <div class="card-body" style="color: white;">
                     <form method="POST" action="{{ route('register') }}">
                         @csrf
 
@@ -67,7 +68,7 @@
 
                         <div class="row mb-0">
                             <div class="col-md-6 offset-md-4">
-                                <button type="submit" class="btn btn-primary">
+                                <button type="submit" class="btn btn-lg btn-warning">
                                     {{ __('Register') }}
                                 </button>
                             </div>

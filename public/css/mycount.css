@@ -3,6 +3,10 @@ body{
     font-family: 'Nunito', sans-serif;
 }
 
+.card{
+    background: url("/img/fondo/fondo_welcome.jpg");
+}
+
 .foto{
     height: 80%;
     width: 80%;
