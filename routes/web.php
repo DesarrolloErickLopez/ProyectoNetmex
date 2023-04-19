@@ -14,7 +14,7 @@ use App\Http\Controllers\UserController;
 //     return view('welcome');
 // });
 
-
+// Route::view('/busqueda','busqueda')->name('busqueda');
 Route::view('/','welcome')->name('welcome');
 Route::view('/contact','contact')->name('contact');
 Route::post('/contact',[MessagesController::class, 'store']);
