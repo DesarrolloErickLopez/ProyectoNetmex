@@ -11,7 +11,7 @@
             <div class="card-body">
                 <div class="row row-cols-1 row-cols-lg-2 g-2 g-lg-3">
                     <div class="seccionFoto col">
-                        <img class="foto" src="{{asset('img/perfil/perfil-de-usuario.jpg')}}" alt="">
+                        <img class="foto" src="{{asset('img/icono/logo.jpg')}}" alt="">
                     </div>
                     <div class="col" style="background-color: black;">
                         <div class="infoUsuario">

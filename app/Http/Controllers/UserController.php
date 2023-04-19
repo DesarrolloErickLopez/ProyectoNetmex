@@ -4,7 +4,9 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Mycount;
+use App\Models\Historial;
 use App\Http\Requests\CreateUserRequest;
+use Illuminate\Support\Facades\Http;
 
 class UserController extends Controller
 {
@@ -16,7 +18,22 @@ class UserController extends Controller
     public function index()
     {
         $users = Mycount::get();
-		return view('mycount', compact('users'));
+        $historial = Historial::get(); 
+        $historialMovies = [];
+        foreach ($historial as $id) {
+        $movie = Http::withToken(config('services.tmdb.token'))
+            ->get('https://api.themoviedb.org/3/movie/'.$id ['ID'].'?append_to_response=credits,videos,images')
+            ->json(); 
+            array_push($historialMovies, $movie);
+        }
+
+        return view('mycount', [
+            'users' =>$users,
+            'historial' =>$historial,
+            'historialMovies' =>$historialMovies,
+
+        ]
+    );
     }
 
     /**
@@ -44,7 +61,21 @@ class UserController extends Controller
         
         $user->update($request->validated());
 
-        return view('mycount');
+        $historial = Historial::get(); 
+        $historialMovies = [];
+        foreach ($historial as $id) {
+        $movie = Http::withToken(config('services.tmdb.token'))
+            ->get('https://api.themoviedb.org/3/movie/'.$id ['ID'].'?append_to_response=credits,videos,images')
+            ->json(); 
+            array_push($historialMovies, $movie);
+        }
+
+        return view('mycount', [
+            'historial' =>$historial,
+            'historialMovies' =>$historialMovies,
+
+        ]
+        );
     }
 
 }

@@ -31,6 +31,9 @@ Route::patch('/mycount/{user}', [UserController::class, 'update'])->name('mycoun
 Route::get('/home', 'App\Http\Controllers\MoviesController@index')->name('movies.home');
 Route::get('/movies/{movie}', 'App\Http\Controllers\MoviesController@show')->name('movies.show');
 
+
+// Route::get('/mycount/{movie}', 'App\Http\Controllers\HomeController@show')->name('mycount.show');
+
 // AQUÍ ESTAMOS ALMACENANDO TODAS LAS RUTAS QUE TIENE QUE VER CON EL TEMA DE LA AUTENTICACION
 
 Auth::routes();

@@ -111,6 +111,32 @@
                 </div>
             </div>
         </div>
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 class="titleSection">TOP</h1>
+                    <div id="news-slider2" class="owl-carousel">                
+                        @foreach ($topRatedMovies as $movie)  
+                        <x-movie-card :movie="$movie" :genres="$genres"/>
+                        @endforeach
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 class="titleSection">TOP</h1>
+                    <div id="news-slider3" class="owl-carousel">                
+                        @foreach ($upComingMovies as $movie)  
+                        <x-movie-card :movie="$movie" :genres="$genres"/>
+                        @endforeach
+                    </div>
+                </div>
+            </div>
+        </div>
         {{-- NOW PLAYING MOVIES --}}
         {{-- <div class="container-fluid">
             <div class="row">
@@ -143,6 +169,18 @@
     });
     $(function() {
         $("#news-slider2").owlCarousel({
+            items :5,
+            itemsDesktop:[1199,3],
+            itemsDesktopSmall:[980,2],
+            itemsMobile : [600,1],
+            navigation:true,
+            navigationText:["",""],
+            pagination:true,
+            autoPlay:true
+        });
+    });
+    $(function() {
+        $("#news-slider3").owlCarousel({
             items :5,
             itemsDesktop:[1199,3],
             itemsDesktopSmall:[980,2],

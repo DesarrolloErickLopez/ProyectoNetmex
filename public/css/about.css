@@ -3,54 +3,21 @@ body{
     font-family: 'Nunito', sans-serif;
 }
 
-.foto{
-    height: 80%;
-    width: 80%;
-    margin: auto;
-    border-radius: 10%;
+.card{
+    margin: 1%;
+    background: url("/img/fondo/fondo_welcome.jpg");
 }
 
-.seccionFoto{
-    background-color: rgb(1, 2, 79);
-    text-align: center;
-    display: inherit;
-}
-
-.infoUser{
- margin: 10%;
- text-align: center;
-}
-
-.empty{
-    text-align: center;
-}
-
-.msjempty{
-    font-size: 40px;
-}
-
-p{
-    margin-top: 1rem;
-margin-bottom: 1rem;
-color: white;
-font-size: 30px;
-}
-
-/* .infoUsuario{
-
-} */
-
-.modal-dialog{
-    max-width: 80% !important;
-}
-
-.form-label{
+.card-header{
     color: white;
 }
 
-li{
+.card-title{
     color: white;
-    list-style-type: none;
+}
+
+.card-text{
+    color: white;
 }
 
 #news-slider{
@@ -109,8 +76,8 @@ li{
     padding: 2px 20px 40px;
     border-radius: 15px;
     background-color: #000;
-    min-height: 60px;
-    max-height: 60px;
+    min-height: 110px;
+    max-height: 110px;
     /* height: auto; */
 }
 .post-slide .post-title a{
