@@ -28,22 +28,22 @@
         <div class="carousel-item active">
         <img src="{{asset('img/home-carrusel/peliculas.jpg')}}" class="d-block w-100 h-50" alt="...">
         <div class="carousel-caption d-none d-md-block">
-            <h5>First slide label</h5>
-            <p>Some representative placeholder content for the first slide.</p>
+            <h5>Desde la comodidad de tu casa</h5>
+            <p>Disfruta de todo nuestro contenido a tu disposición.</p>
         </div>
         </div>
         <div class="carousel-item">
         <img src="{{asset('img/home-carrusel/series.jpg')}}" class="d-block w-100" alt="...">
         <div class="carousel-caption d-none d-md-block">
-            <h5>Second slide label</h5>
-            <p>Some representative placeholder content for the second slide.</p>
+            <h5>Series y  peliculas de estreno</h5>
+            <p>Contenido nuevo cada semana para que nunca te aburras de estar en tu casa.</p>
         </div>
         </div>
         <div class="carousel-item">
         <img src="{{asset('img/home-carrusel/seVeChida.png')}}" class="d-block w-100" alt="...">
         <div class="carousel-caption d-none d-md-block">
-            <h5>Third slide label</h5>
-            <p>Some representative placeholder content for the third slide.</p>
+            <h5>Las mejor calidad para nuestros clientes</h5>
+            <p>Netmex te proporciona únicamente el mejor contenido y más el reciente.</p>
         </div>
         </div>
     </div>

@@ -137,7 +137,8 @@
                         <img src="{{asset('img/welcome-imgs/cine.png')}}" class="card-img-top" alt="..." style="height: 30%;">
                         <div class="card-body">
                             <h5 class="card-title">Aprovecha nuestra promociones</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <p class="card-text">Disfruta de nuestro amplio catalogo de contenido asi como las prommocines que NETMEX te brinda, no esperes mas y unete a esta gran comunidad cinefanatica.</p>
+                            {{-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> --}}
                         </div>
                     </div>
                 </div>
@@ -146,7 +147,7 @@
                         <img src="{{asset('img/welcome-imgs/series.jpg')}}" class="card-img-top" alt="..." style="height: 30%;">
                         <div class="card-body">
                             <h5 class="card-title">Series</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <p class="card-text">Podrás ver todo tipo de series desde donde quieras cuando quieras, nuestro catálogo de contenido te brindara miles de horas de entretenimiento.</p>
                         </div>
                     </div>
                 </div>
@@ -155,7 +156,7 @@
                         <img src="{{asset('img/welcome-imgs/peliculas.jpg')}}" class="card-img-top" alt="..." style="height: 30%;">
                         <div class="card-body">
                             <h5 class="card-title">Peliculas</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <p class="card-text">Podrás ver cientos de películas de todo tipo desde la comodidad, contenido de calidad tanto que no podrás creerlo.</p>
                         </div>
                     </div>
                 </div>

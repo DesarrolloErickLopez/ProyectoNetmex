@@ -5,19 +5,39 @@ body{
 
 .card{
     margin: 1%;
-    background: url("/img/fondo/fondo_welcome.jpg");
+    background: url("/img/fondo/fondo_welcome2.jpg");
+}
+
+.sabeMas{
+    bottom: 5%;
+    position: absolute;
+}
+
+.card-body{
+    height: 350px !important;
 }
 
 .card-header{
     color: white;
+    font-size: 22px;
+}
+
+.politicas{
+    font-size: 18px !important;
 }
 
 .card-title{
     color: white;
 }
 
+.large-card{
+    height: 200px;
+}
+
 .card-text{
     color: white;
+    font-size: 18px !important;
+    text-align: justify;
 }
 
 #news-slider{

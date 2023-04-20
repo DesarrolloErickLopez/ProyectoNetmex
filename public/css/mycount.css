@@ -4,7 +4,7 @@ body{
 }
 
 .card{
-    background: url("/img/fondo/fondo_welcome.jpg");
+    background: url("/img/fondo/fondo_welcome2.jpg");
 }
 
 .foto{
@@ -15,7 +15,7 @@ body{
 }
 
 .seccionFoto{
-    background-color: rgb(1, 2, 79);
+    background-color: rgb(2, 2, 45);
     text-align: center;
     display: inherit;
 }

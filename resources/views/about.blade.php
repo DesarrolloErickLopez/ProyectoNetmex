@@ -6,9 +6,6 @@
     <link rel="stylesheet" type="text/css" href="{{asset('css/about.css')}}">
 </head>
 <style>
-  .card-text{
-    font-size: 10px;
-  }
   .card{
     height: 100%;
   }
@@ -145,9 +142,9 @@
           <div class="card-header">
             NetMex
           </div>
-          <div class="card-body">
+          <div class="card-body" style="height: 100% !important;">
             <h5 class="card-title">Políticas de calidad</h5>
-            <p class="card-text" style="font-size: 12px!important">NetMex quiere compartir contigo las politicas de calidad bajo las cuales se rige nuestra emresa, si deseas saber mas acerca de las politicas de calidad de nuestra empresa da clic en el siguiente boton.</p>
+            <p class="card-text" style="font-size: 22px!important; margin-bottom: 5%;">NetMex quiere compartir contigo las politicas de calidad bajo las cuales se rige nuestra emresa, si deseas saber mas acerca de las politicas de calidad de nuestra empresa da clic en el siguiente boton.</p>
             <button type="button" class="sabeMas btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal4">
               Saber más
             </button>
