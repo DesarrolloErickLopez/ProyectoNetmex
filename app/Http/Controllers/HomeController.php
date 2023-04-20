@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-// use Illuminate\Support\Facades\Http;
+use Illuminate\Support\Facades\Http;
 
 class HomeController extends Controller
 {
@@ -31,4 +31,25 @@ class HomeController extends Controller
     
         // return view('home');
     }
+
+    //  /**
+    //  * Display the specified resource.
+    //  *
+    //  * @param  int  $id
+    //  * @return \Illuminate\Http\Response
+    //  */
+    // public function show($id)
+    // {
+    //     $movie = Http::withToken(config('services.tmdb.token'))
+    //         ->get('https://api.themoviedb.org/3/movie/'.$id.'?append_to_response=credits,videos,images')
+    //         ->json(); 
+
+    //     dump($movie);
+
+    //     return view('mycount', 
+    //         [
+    //         'movie' =>$movie,
+    //         ]
+    //     );
+    // }
 }

@@ -15,7 +15,7 @@
 <body>
 <div class="container">
     <!-- ESTE ES UN RENGLON -->
-    <div class="row" style="height:auto;background-color:purple;">
+    <div class="row" style="height:auto;background-color:rgb(1, 2, 79);">
         <!-- ESTA ES UNA COLUMNA -->
         <div class="col-8" id="colUno" style="height:auto;padding:1%;">
             <p id="tituloContact">Atención a clientes</p>
@@ -23,8 +23,7 @@
             <p id=texto1Contact>            
             <b>Hola ¿En qué podemos ayudarte?</b><br>
             En NETMEX nos encanta recibir todas tus dudas, comentarios y
-            observaciones. Queremos asegurarnos de que cada experiencia en
-            Starbucks sea la mejor.<br/>
+            observaciones. Queremos asegurarnos de que cada experiencia sea la mejor.<br/>
             <b><i class="bi bi-chat-left-quote-fill"></i> Atención al cliente</b>
             </p>
             @if(session('status'))
@@ -63,10 +62,10 @@
                     {!! $errors->first('content','<small>:message</small><br>') !!}
                 </div>
                 
-                <button class="btn btn-primary" style="width:100%">Enviar</button>
+                <button class="btn btn-warning" style="width:100%">Enviar</button>
             </form>
         </div>
-        <div class="col-4">
+        <div class="apis col-4">
         
         <section id="mensaje">
         <p >

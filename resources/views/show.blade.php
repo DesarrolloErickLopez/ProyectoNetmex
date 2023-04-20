@@ -53,18 +53,49 @@
                             @endforeach                     
                         </div>
                     </div>
-                    @if (count($movie['videos']['results']) > 0 )
+                    {{-- @if (count($movie['videos']['results']) > 0 )
                         <div class="mt-12" style="margin-top: 10%">
                             <a style="color:black !important;" href="https://youtube.com/watch?v={{ $movie['videos']['results'][0]['key'] }}" type="button" class="btn btn-warning btn-lg">
                                 <i class="bi bi-caret-right-fill"></i>
                                 <span class="ml-2">Play Trailer</span>
                             </a>
                         </div>
-                    @endif
+                    @endif --}}
+                    <div class="mt-12" style="margin-top: 10%">
+                        <button style="color:black !important;" type="button" class="btn btn-warning btn-lg" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            <i class="bi bi-caret-right-fill"></i>
+                            <span class="ml-2">Play Trailer</span>
+                        </button>                         
+                    </div>
                 </div>
             </div>
         </div>
     </div> <!--END movie-info-->
+
+{{-- DIV DE PRUEBA PARA LA REPRODUCCION DEL VIDEO --}}
+    {{-- <div class="container movie-info border-b border-gray-800" style="background-color: #00000030; margin-top: 5%;">
+        <P>VIDEO</P>
+        <div class="row row-cols-1 row-cols-lg-2 g-2 g-lg-3">
+            <div class="col">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/{{ $movie['videos']['results'][0]['key'] }}?" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div> --}}
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog"
+        style="max-width: 80%">
+          <div class="modal-content">
+            <div class="modal-header" style="background: url({{asset('img/fondo/fondo_welcome1.jpg')}});">
+              <button type="button" class="btn btn-dark" data-bs-dismiss="modal" aria-label="Close"><i class="bi bi-x-circle"></i></button>
+            </div>
+            <iframe width="100%" height="500px" src="https://www.youtube.com/embed/{{ $movie['videos']['results'][0]['key'] }}?" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+    </div>
+      
+
+
 
 {{-- DIV PARA EL CAST  DE LA PELICULA --}}
     <div class="container">

@@ -51,4 +51,14 @@ body{
 
 .card {
     margin: auto;
+    background: url("/img/fondo/fondo_welcome2.jpg");
+    color: white;
+}
+
+.card-body{
+    flex: 1 1 auto;
+    padding: 1rem 1rem;
+    height: 160px;
+    text-justify: inter-word !important;
+    text-align: justify;
 }

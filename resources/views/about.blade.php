@@ -3,12 +3,9 @@
 @section('content')
 
 <head>
-    <link rel="stylesheet" type="text/css" href="{{asset('css/home-estilos.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{asset('css/about.css')}}">
 </head>
 <style>
-  .card-text{
-    font-size: 10px;
-  }
   .card{
     height: 100%;
   }
@@ -24,8 +21,8 @@
           <div class="card-body">
             <h5 class="card-title">Misión</h5>
             <p class="card-text">NetMex quiere que conozcas su mision así como las metas a cuplir y objetivos que la empresa desea realizar para saber mas acerca de la misión de nuestra emresa da clic en el boton.</p>
-            {{-- <a href="#" class="btn btn-primary">Saber más</a> --}}
-            <button type="button" class="sabeMas btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            {{-- <a href="#" class="btn btn-warning">Saber más</a> --}}
+            <button type="button" class="sabeMas btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal">
               Saber más
             </button>
             <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -40,7 +37,7 @@
                     La empresa NetMex se ajusta a los gustos de cada persona, pues no solo tiene películas viejitas, sino, también nuevas que permitirá al usuario elegir entre ellas.
                   </div>
                   <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
                   </div>
                 </div>
               </div>
@@ -56,8 +53,8 @@
           <div class="card-body">
             <h5 class="card-title">Visión</h5>
             <p class="card-text">NetMex quiere compartir contigo su visión sobre la industria del entretenimiento así podras conocer mejor cual es son nuestros ideales, si deseas saber mas acerca de visíon de nuestra empresa da clic en el siguiente boton.</p>
-            {{-- <a href="#" class="sabeMas btn btn-primary">Saber más</a> --}}
-            <button type="button" class="sabeMas btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+            {{-- <a href="#" class="sabeMas btn btn-warning">Saber más</a> --}}
+            <button type="button" class="sabeMas btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal2">
               Saber más
             </button>
             <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -72,7 +69,7 @@
                     Ser una institución dedicada a la investigación e innovación de películas, series, novelas, etc. Para brindar al usuario una mayor satisfacción y darle a conocer que NetMex se dedica por completo a la necesidad de los usuarios.
                   </div>
                   <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
                   </div>
                 </div>
               </div>
@@ -88,8 +85,8 @@
           <div class="card-body">
             <h5 class="card-title">Valores</h5>
             <p class="card-text">NetMex quiere compartir la lista de valores por las cuales se rige nuestra empresa apegandonos cada día a ellos y trabajando para cumplir con todos y cada uno de ellos, si deseas saber mas acerca de los valores de nuestra empresa da clic en el siguiente boton.</p>
-            {{-- <a href="#" class="sabeMas btn btn-primary">Saber más</a> --}}
-            <button type="button" class="sabeMas btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal3">
+            {{-- <a href="#" class="sabeMas btn btn-warning">Saber más</a> --}}
+            <button type="button" class="sabeMas btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal3">
               Saber más
             </button>
             <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -128,7 +125,7 @@
                     </ul>
                   </div>
                   <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
                   </div>
                 </div>
               </div>
@@ -145,10 +142,10 @@
           <div class="card-header">
             NetMex
           </div>
-          <div class="card-body">
+          <div class="card-body" style="height: 100% !important;">
             <h5 class="card-title">Políticas de calidad</h5>
-            <p class="card-text" style="font-size: 12px!important">NetMex quiere compartir contigo las politicas de calidad bajo las cuales se rige nuestra emresa, si deseas saber mas acerca de las politicas de calidad de nuestra empresa da clic en el siguiente boton.</p>
-            <button type="button" class="sabeMas btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal4">
+            <p class="card-text" style="font-size: 22px!important; margin-bottom: 5%;">NetMex quiere compartir contigo las politicas de calidad bajo las cuales se rige nuestra emresa, si deseas saber mas acerca de las politicas de calidad de nuestra empresa da clic en el siguiente boton.</p>
+            <button type="button" class="sabeMas btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal4">
               Saber más
             </button>
             <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -182,7 +179,7 @@
                     </ul>
                   </div>
                   <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
                   </div>
                 </div>
               </div>
@@ -192,26 +189,4 @@
       </div>
     </div>
 </div>
-
 @endsection
-
-{{-- <!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="{{asset('css/home-estilos.css')}}">
-  </head>
-    @section('content')
-        <body>
-        <h1 style="color: white;">Hello, world!</h1>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
-
-            
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
-        </body>
-    @endsection      
-</html> --}}

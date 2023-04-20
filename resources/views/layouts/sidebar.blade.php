@@ -24,15 +24,18 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{ route('welcome') }}">INICIO</a>
+                            </li>
                         @if (Route::has('login'))
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
+                                <a class="nav-link" href="{{ route('login') }}">{{ __('LOGIN') }}</a>
                             </li>
                         @endif
 
                         @if (Route::has('register'))
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
+                                <a class="nav-link" href="{{ route('register') }}">{{ __('REGISTER') }}</a>
                             </li>
                         @endif                     
                     </ul>
@@ -44,15 +47,18 @@
                     </div>
                     <div class="offcanvas-body">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{ route('welcome') }}">INICIO</a>
+                            </li>
                         @if (Route::has('login'))
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
+                                <a class="nav-link" href="{{ route('login') }}">{{ __('LOGIN') }}</a>
                             </li>
                         @endif
 
                         @if (Route::has('register'))
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
+                                <a class="nav-link" href="{{ route('register') }}">{{ __('REGISTER') }}</a>
                             </li>
                         @endif                         
                         </ul>    
@@ -83,7 +89,7 @@
                             <a class="itemSideBar nav-link px-3" href="{{ route('about') }}">ACERCA DE</a>
                         </li>
                         <li class="nav-item">
-                            <a class="itemSideBar nav-link px-3" href="{{ route('mycount') }}">MI CUENTA</a>
+                            <a class="itemSideBar nav-link px-3" href="{{ route('mycount.index') }}">MI CUENTA</a>
                         </li>
                         <li class="nav-item dropdown px-3">
                             <a id="navbarDropdown" class="itemSideBar nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
@@ -123,7 +129,7 @@
                                 <a class="itemSideBar nav-link px-3" href="{{ route('about') }}">ACERCA DE</a>
                             </li>
                             <li class="nav-item">
-                                <a class="itemSideBar nav-link px-3" href="{{ route('mycount') }}">MI CUENTA</a>
+                                <a class="itemSideBar nav-link px-3" href="{{ route('mycount.index') }}">MI CUENTA</a>
                             </li>
                             <li class="nav-item dropdown px-3">
                                 <a id="navbarDropdown" class="itemSideBar nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>

@@ -6,8 +6,17 @@
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css"> 
+<link rel="stylesheet" type="text/css" href="{{asset('css/busqueda.css')}}">
+    <script src="{{ asset('js/busqueda.js') }}" defer></script>
 </head>  
-
+<div id="busqueda">
+    <div class="input-group mb-1">
+        <span class="input-group-text"><i class="bi bi-search" style="  margin-top:-7px;"></i></span>
+        <input  type="text" class="form-control" id="searchInput" placeholder="Escribe el título de la película...">
+        <ul id="autocompleteResults"></ul>
+</div>
+        
+</div>
 <!-- CARRUSEL DE PORTADA HASTA EL MOMENTO -->
 <div id="carouselExampleCaptions" class="headCarousel carousel slide">
     <div class="carousel-indicators">
@@ -19,22 +28,22 @@
         <div class="carousel-item active">
         <img src="{{asset('img/home-carrusel/peliculas.jpg')}}" class="d-block w-100 h-50" alt="...">
         <div class="carousel-caption d-none d-md-block">
-            <h5>First slide label</h5>
-            <p>Some representative placeholder content for the first slide.</p>
+            <h5>Desde la comodidad de tu casa</h5>
+            <p>Disfruta de todo nuestro contenido a tu disposición.</p>
         </div>
         </div>
         <div class="carousel-item">
         <img src="{{asset('img/home-carrusel/series.jpg')}}" class="d-block w-100" alt="...">
         <div class="carousel-caption d-none d-md-block">
-            <h5>Second slide label</h5>
-            <p>Some representative placeholder content for the second slide.</p>
+            <h5>Series y  peliculas de estreno</h5>
+            <p>Contenido nuevo cada semana para que nunca te aburras de estar en tu casa.</p>
         </div>
         </div>
         <div class="carousel-item">
         <img src="{{asset('img/home-carrusel/seVeChida.png')}}" class="d-block w-100" alt="...">
         <div class="carousel-caption d-none d-md-block">
-            <h5>Third slide label</h5>
-            <p>Some representative placeholder content for the third slide.</p>
+            <h5>Las mejor calidad para nuestros clientes</h5>
+            <p>Netmex te proporciona únicamente el mejor contenido y más el reciente.</p>
         </div>
         </div>
     </div>
@@ -111,6 +120,32 @@
                 </div>
             </div>
         </div>
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 class="titleSection">TOP</h1>
+                    <div id="news-slider2" class="owl-carousel">                
+                        @foreach ($topRatedMovies as $movie)  
+                        <x-movie-card :movie="$movie" :genres="$genres"/>
+                        @endforeach
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 class="titleSection">TOP</h1>
+                    <div id="news-slider3" class="owl-carousel">                
+                        @foreach ($upComingMovies as $movie)  
+                        <x-movie-card :movie="$movie" :genres="$genres"/>
+                        @endforeach
+                    </div>
+                </div>
+            </div>
+        </div>
         {{-- NOW PLAYING MOVIES --}}
         {{-- <div class="container-fluid">
             <div class="row">
@@ -143,6 +178,18 @@
     });
     $(function() {
         $("#news-slider2").owlCarousel({
+            items :5,
+            itemsDesktop:[1199,3],
+            itemsDesktopSmall:[980,2],
+            itemsMobile : [600,1],
+            navigation:true,
+            navigationText:["",""],
+            pagination:true,
+            autoPlay:true
+        });
+    });
+    $(function() {
+        $("#news-slider3").owlCarousel({
             items :5,
             itemsDesktop:[1199,3],
             itemsDesktopSmall:[980,2],

@@ -6,6 +6,7 @@
     <div class="post-content">
         <h3 class="post-title">
         <p class="movieTitle" >{{ $movie['title'] }}</p>
+        {{-- <a href="{{ route('mycount.show', $movie['id']) }}" class=""><p>hola</p></a> --}}
         </h3>                                
         <div class="movieInfo">
             <span>
